@@ -1,0 +1,1 @@
+This is HTML, CSS, and JS assisgnments.
