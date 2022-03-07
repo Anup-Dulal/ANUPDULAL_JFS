@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util 
+   		   http://www.springframework.org/schema/util/spring-util.xsd">
+   		   
+   		   
+   		   <bean id = "question" class = "Collections_Example.Questions" >
+   		   <property name="questionId" value = "01"/>
+   		   <property name="questions" value = "How are you"/>
+   		   <property name="List" ref = "Map"/>
+   		   </bean>
+     
+   		   <bean id = "Map" class = "Collections_Example.Map_Class">
+   		   <property name="m">
+   		   	<util:map>
+   		   	<entry key = "1" value = "This is Map"/>
+   		   	<entry key = "2" value = "I am fine what about you"/>
+   		   	
+   		   	</util:map>
+   		   </property>
+   		   
+   		   </bean> 
+   		   
+   		   
+   		   
+  </beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util 
+   		   http://www.springframework.org/schema/util/spring-util.xsd">
+   		   
+   		   <bean id = "bankAccount" class = "Banking_Application.BankAccount_Controller" autowire = "byName">
+   		   </bean>
+   		   
+   		   <bean id = "BankAccount" class = "Banking_Application.BankAccount">
+   		   <property name="accountid" value = "123" />
+   		   <property name="accountHolderName" value = "John" />
+   		   <property name="accountType" value = "Salary" />
+   		   <property name="accountBalance" value = "3000000" />
+   		   </bean>
+   		   
+  </beans>
